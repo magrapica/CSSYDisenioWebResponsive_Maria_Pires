@@ -1,0 +1,332 @@
+/* Estilos Generales */
+body {
+  font-family: 'Dancing Script', cursive;
+  background-color: #02010a;
+}
+
+#contenido {
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* para que las imágenes no sobrepasen su contenedor */
+img {
+  width: 100%;
+}
+
+header {
+  background-color: #5b7989;
+  padding: 2vh 1vw;
+  overflow: hidden;
+  border-radius: 10px 10px 0 0;
+  -webkit-border-radius: 10px 10px 0 0; /* soporte para Safari */
+  -moz-border-radius: 10px 10px 0 0; /* soporte para Firefox */
+  -o-border-radius: 10px 10px 0 0; /* soporte para Opera */
+  animation-name: rebotar;
+	animation-duration: 1s;
+}
+
+@keyframes rebotar {
+  0% {
+    margin-top: 150%;
+  }
+  60% {
+    margin-top: -5%;
+  }
+  100% {
+    margin-top: 0%;
+  }
+}
+
+@-webkit-keyframes rebotar { /* soporte para Safari */
+  0% {
+    margin-top: 150%;
+  }
+  60% {
+    margin-top: -5%;
+  }
+  100% {
+    margin-top: 0%;
+  }
+}
+
+@-moz-keyframes rebotar { /* soporte para Firefox */
+  0% {
+    margin-top: 150%;
+  }
+  60% {
+    margin-top: -5%;
+  }
+  100% {
+    margin-top: 0%;
+  }
+}
+
+@-o-keyframes rebotar { /* soporte para Opera */
+  0% {
+    margin-top: 150%;
+  }
+  60% {
+    margin-top: -5%;
+  }
+  100% {
+    margin-top: 0%;
+  }
+}
+
+header h1 {
+  color: white;
+  text-shadow: 2px 2px #02010a;
+  -webkit-text-shadow: 2px 2px #02010a; /* soporte para Safari */
+  -moz-text-shadow: 2px 2px #02010a; /* soporte para Firefox */
+  -o-text-shadow: 2px 2px #02010a; /* soporte para Opera */
+  float: left;
+  margin: 0;
+}
+
+header nav ul {
+  float: right;
+  list-style: none;
+  margin: 1.5vh 0 0 0;
+}
+
+header nav ul li {
+  display: inline-block;
+}
+
+header nav ul li a {
+  color: white;
+  margin-right: 10px;
+}
+
+header nav ul li:last-child a {
+  margin-right: 0;
+}
+
+#inicio a[rel="btnInicio"], #paisajes a[rel="btnPaisajes"], #retratos a[rel="btnRetratos"] {
+  text-decoration: none;
+}
+
+footer {
+  border-radius: 0, 0, 10px, 10px;
+  -webkit-border-radius: 0, 0, 10px, 10px; /* soporte para Safari */
+  -moz-border-radius: 0, 0, 10px, 10px; /* soporte para Firefox */
+  -o-border-radius: 0, 0, 10px, 10px; /* soporte para Opera */
+  display: flex;
+  display: -webkit-box; /* soporte para Safari */
+  display: -moz-box; /* soporte para Firefox */
+  display: -webkit-flex; /* soporte para Opera */
+  background-color: #C6d5c5;
+  padding: 1vh 2vw;
+}
+
+footer div h3 {
+  font-size: 1.5em;
+  margin-bottom: 1vh;
+}
+
+footer div img {
+  width: auto;
+  margin-right: 0.5vw;
+}
+
+footer div p {
+  margin-top: 0;
+}
+
+footer div ul {
+  margin: 0;
+  padding: 0;
+}
+
+footer div ul li {
+  list-style: none;
+}
+
+footer #redes ul li {
+  margin-bottom: 2vh;
+}
+
+footer #redes ul li a:hover img {
+  transform: translate(0, -3px);
+  -webkit-transform: translate(0, -3px); /* soporte para Safari */
+  -moz-transform: translate(0, -3px); /* soporte para Firefox */
+  -o-transform: translate(0, -3px); /* soporte para Opera */
+}
+
+footer #redes ul li a:hover {
+  text-decoration: underline;
+}
+
+footer div ul li a {
+  color: black;
+  text-decoration: none;
+  display: flex;
+  display: -webkit-box; /* soporte para Safari */
+  display: -moz-box; /* soporte para Firefox */
+  display: -webkit-flex; /* soporte para Opera */
+  margin: 0 0 1vh 0;
+}
+
+footer div ul li p {
+  margin: 0 0 1vh 0;
+}
+
+/* Estilos Inicio */
+
+#imagen1 img, #imagen2 img, #imagen3 img {
+    box-shadow: 2px 2px #02010a;
+    -webkit-box-shadow: 2px 2px #02010a; /* soporte para Safari */
+    -moz-box-shadow: 2px 2px #02010a; /* soporte para Firefox */
+    -o-box-shadow: 2px 2px #02010a; /* soporte para Opera */
+}
+
+#imagenCentral {
+  background-color: #82c3a6;
+  padding: 1vh 0;
+}
+
+#imagenCentral #imagen1 {
+  text-align: center;
+}
+
+#imagenesSecundarias {
+  background-color: #d5c75f;
+  display: flex;
+  display: -webkit-box; /* soporte para Safari */
+  display: -moz-box; /* soporte para Firefox */
+  display: -webkit-flex; /* soporte para Opera */
+  padding: 1vh 0 3vh;
+}
+
+#imagenesSecundarias a {
+  text-align: center;
+  color: black;
+  display: block;
+  font-weight: bold;
+}
+
+#imagenesSecundarias #imagen2, #imagenesSecundarias #imagen3 {
+  text-align: center;
+}
+
+#imagenesSecundarias #imagen2 img, #imagenesSecundarias #imagen3 img {
+  border: 1px solid black;
+}
+
+#imagenesSecundarias #imagen2 img:hover {
+  transform: rotate(10deg);
+  -webkit-transform: rotate(10deg); /* soporte para Safari */
+  -moz-transform: rotate(10deg); /* soporte para Firefox */
+  -o-transform: rotate(10deg); /* soporte para Opera */
+}
+
+#imagenesSecundarias #imagen2 img:hover , #imagenesSecundarias #imagen3 img:hover {
+  box-shadow: 2px 2px #82c3a6 ;
+  -webkit-box-shadow: 2px 2px #82c3a6 ; /* soporte para Safari */
+  -moz-box-shadow: 2px 2px #82c3a6 ; /* soporte para Firefox */
+  -o-box-shadow: 2px 2px #82c3a6 ; /* soporte para Opera */
+  border: 2px solid black;
+  transition-duration: 1s;
+  -webkit-transition-duration: 1s; /* soporte para Safari */
+  -moz-transition-duration: 1s; /* soporte para Firefox */
+  -o-transition-duration: 1s; /* soporte para Opera */
+}
+
+#imagenesSecundarias #imagen3 img:hover {
+  transform: translate(20px, -5px);
+  -webkit-transform: translate(20px, -5px); /* soporte para Safari */
+  -moz-transform: translate(20px, -5px);  /* soporte para Firefox */
+  -o-transform: translate(20px, -5px); /* soporte para Opera */
+}
+
+/* Fin Estilos Inicio */
+
+/* Estilos Paisajes */
+
+#contenedorGaleria {
+  padding: 2vh 0 3vh;
+  background-color: #d5c75f;
+}
+
+.galeria {
+  display: flex;
+  display: -webkit-box; /* soporte para Safari */
+  display: -moz-box; /* soporte para Firefox */
+  display: -webkit-flex; /* soporte para Opera */
+}
+
+.galeria #imagen1 img {
+  -webkit-filter: blur(10px); /* soporte para Safari */
+  -moz-filter: blur(10px); /* soporte para Firefox */
+  -o-filter: blur(10px); /* soporte para Opera */
+  filter: blur(10px);
+}
+
+.galeria #imagen2 img, .galeria #imagen4 img, .galeria #imagen6 img {
+  -webkit-filter: grayscale(100%); /* soporte para Safari */
+  -moz-filter: grayscale(100%); /* soporte para Firefox */
+  -o-filter: grayscale(100%); /* soporte para Opera */
+  filter: grayscale(100%);
+}
+
+.galeria #imagen3 img {
+  -webkit-filter: sepia(90%); /* soporte para Safari */
+  -moz-filter: sepia(90%); /* soporte para Firefox */
+  -o-filter: sepia(90%); /* soporte para Opera */
+  filter: sepia(90%);
+}
+
+/* Fin Estilos Paisajes */
+
+/* Media Queries para Desktop */
+@media (min-width: 900px) {
+  #contenido {
+    width: 900px;
+  }
+
+  #imagenesSecundarias article {
+    width: 100%;
+  }
+
+  footer div {
+    width: 25%;
+  }
+
+  .galeria article {
+    width: 33.33%;
+  }
+}
+
+/* Media Queries para Smartphones hasta Desktop */
+@media (max-width: 900px) {
+  #contenido {
+    width: 100%;
+  }
+
+  #imagenesSecundarias, .galeria {
+    flex-direction: column;
+  }
+
+  #imagenesSecundarias article {
+    width: 100%;
+  }
+
+  footer div {
+    width: 100%;
+  }
+
+  .galeria article {
+    width: 100%;
+  }
+
+  header {
+    text-align: center;
+  }
+
+  header h1, header nav ul {
+    float: none;
+    display: inline-block;
+    text-align: center;
+  }
+}
