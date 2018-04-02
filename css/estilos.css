@@ -304,7 +304,7 @@ footer div ul li p {
     width: 100%;
   }
 
-  #imagenesSecundarias, .galeria {
+  #imagenesSecundarias, .galeria, footer {
     flex-direction: column;
   }
 
@@ -314,6 +314,7 @@ footer div ul li p {
 
   footer div {
     width: 100%;
+    padding: 0 5vw;
   }
 
   .galeria article {
